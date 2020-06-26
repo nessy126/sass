@@ -1,0 +1,40 @@
+[class^="logo"], [class*=" logo"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.logoname {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.logologo-1 {
+  width: 0.900390625em;
+}
+
+.logologo-2 {
+  width: 0.76953125em;
+}
+
+.logologo-3 {
+  width: 0.953125em;
+}
+
+.logologo-4 {
+  width: 1.8603515625em;
+}
+
+.logologo-5 {
+  width: 1.2548828125em;
+}
+
+.logologo-6 {
+  width: 1.9345703125em;
+}
