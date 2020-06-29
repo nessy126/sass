@@ -205,6 +205,8 @@ button:focus {
 .button.modal-btn {
   display: block;
   padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   font-weight: 700;
