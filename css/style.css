@@ -202,6 +202,18 @@ button:focus {
   content: '';
 }
 
+.button.modal-btn {
+  display: block;
+  padding: 10px 55px;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  line-height: 1.87;
+  /* letter-spacing: 0.06em;
+  outline: 1px solid black; */
+  cursor: pointer;
+}
+
 /* Header */
 .page-header {
   position: fixed;
@@ -383,7 +395,7 @@ left: 0;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -876,6 +888,10 @@ footer {
 }
 
 .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -897,4 +913,10 @@ footer {
   background: #FFFFFF;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  z-index: 0;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
 }
