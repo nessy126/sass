@@ -453,8 +453,22 @@
       <div class="modal">
         <p>Оставьте свои данные, мы вам перезвоним</p>
         <form action="#" method="POST" class="form-modal">
-          <label for="name"></label>
-          <input type="text" id="name" placeholder="Имя" />
+          <label for="name" class="form-field">
+            <span class="form-label">Имя</span>
+            <input type="text" id="name" class="form-item form-input" />
+           </label>
+          <label for="tel" class="form-field">
+            <span class="form-label">Телефон</span>
+            <input type="tel" id="tel" class="form-item form-input"/>
+          </label>
+          <label for="email" class="form-field">
+            <span class="form-label">Почта</span>
+            <input type="email" id="email" class="form-item form-input"/>
+          </label>
+          <textarea rows="3" cols="35" name="text" placeholder="Комментарий" class="form-textarea form-input form-field"></textarea>
+          <input id="condition" name="condition" type="checkbox" value="confirm" class="form-condition" />
+          <label for="condition" class="form-condition">Соглашаюсь с рассылкой и принимаю <span class="form-condition-link">Условия договора</span> 
+          </label>
         </form>
         <button class="button modal-btn" data-close-modal>Отправить</button>
       </div>
