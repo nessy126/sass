@@ -795,6 +795,7 @@ footer {
 /* Portfolio start*/
 .cover-hover {
   position: relative;
+  overflow: hidden;
 }
 
 .section.portfolio {
@@ -816,7 +817,6 @@ footer {
   border-left: 1px solid var(--border-portfolio-card);
   border-right: 1px solid var(--border-portfolio-card);
   border-bottom: 1px solid var(--border-portfolio-card);
-  z-index: 10;
 }
 
 .filter-button:hover,
@@ -852,14 +852,13 @@ footer {
   bottom: 0;
   transform: translateY(0);
   opacity: 1;
-   transition: opacity 4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 4s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 4s cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: var(--background-blue);
   color: var(--secondary-text-color);
   font-size: 18px;
   line-height: 1.56;
-  z-index: 5;
 }
 
 .client-img,
