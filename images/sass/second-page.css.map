@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,CAAC;EACF,KAAK,EAAE,CAAoB;CAC5B;;AAED,GAAG",
+    "sources": [
+        "second-page.scss"
+    ],
+    "names": [],
+    "file": "second-page.css"
+}

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --secondary-text-color: #ffffff;
@@ -74,7 +74,7 @@ h5,
 h6 {
   color: var(--title-text-color);
   font-weight: 700;
-}
+} */
 
 .is-hidden {
   display: none;
