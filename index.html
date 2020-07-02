@@ -33,7 +33,7 @@
         <ul class="contacts list">
           <li class="menu-item">
             <a href="mailto:info@devstudio.com" class="contact">
-              <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M14.5 0H1.50001C0.672854 0 0 0.628107 0 1.40026V9.80173C0 10.5739 0.672854 11.202 1.50001 11.202H14.5C15.3271 11.202 16 10.5739 16 9.80173V1.40026C16 0.628107 15.3271 0 14.5 0ZM14.5 0.933493C14.5679 0.933493 14.6325 0.94665 14.6916 0.969628L8 6.38361L1.30833 0.969628C1.36742 0.946681 1.43204 0.933493 1.49998 0.933493H14.5ZM14.5 10.2685H1.50001C1.22414 10.2685 0.999996 10.0593 0.999996 9.80169V1.95587L7.67236 7.35402C7.76661 7.43013 7.8833 7.46798 8 7.46798C8.1167 7.46798 8.23339 7.43016 8.32764 7.35402L15 1.95587V9.80173C15 10.0593 14.7759 10.2685 14.5 10.2685Z"/>
               </svg>
@@ -42,7 +42,7 @@
           </li>
           <li class="menu-item">
             <a href="tel:+380961111111" class="contact">
-                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="10" height="15" viewBox="0 0 10 15" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M8.5 0H1.5C0.672848 0 0 0.628103 0 1.40025V13.5357C0 14.3079 0.672848 14.936 1.5 14.936H8.5C9.32715 14.936 10 14.3079 10 13.5357V1.40025C10 0.628103 9.32715 0 8.5 0ZM1.5 0.933498H8.5C8.77588 0.933498 9 1.14271 9 1.40025V11.202H1V1.40025C1 1.14271 1.22412 0.933498 1.5 0.933498ZM8.5 14.0025H1.5C1.22412 14.0025 1 13.7933 1 13.5357V12.1355H9V13.5357C9 13.7933 8.77588 14.0025 8.5 14.0025Z"/>
                 </svg>
@@ -436,7 +436,7 @@
         </div>
         <div class="footer-right">
           <p class="footer-title title-reset">Подпишитесь на рассылку</p>
-          <form class="form">
+          <form class="form-footer">
             <input
               type="text"
               name="email"
@@ -451,27 +451,50 @@
     </footer>
     <div class="backdrop is-hidden-temp" data-backdrop>
       <div class="modal">
+        <button class="close"data-close-modal>
+          <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+             />
+          </svg>
+        </button>
         <p>Оставьте свои данные, мы вам перезвоним</p>
         <form action="#" method="POST" class="form-modal">
-          <label for="name" class="form-field">
-            <span class="form-label">Имя</span>
-            <input type="text" id="name" class="form-item form-input" />
-           </label>
-          <label for="tel" class="form-field">
-            <span class="form-label">Телефон</span>
-            <input type="tel" id="tel" class="form-item form-input"/>
+          <div class="form-field">
+            <input name="name" type="text" id="name" class="form-item form-input" placeholder=" " />
+            <label for="name" class="form-label">Имя</label>
+              <svg class="form-icon" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V11.25C0 11.6625 0.3375 12 0.75 12H11.25C11.6625 12 12 11.6625 12 11.25V10.5C12 8.505 8.0025 7.5 6 7.5Z" />
+              </svg>
+          </div>
+          <div class="form-field">
+            <input name="" type="tel" id="tel" class="form-item form-input" placeholder=" " />
+            <label for="tel" class="form-label">Телефон</label>
+            <svg class="form-icon" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.9958 9.12256L10.1576 8.91269C9.7162 8.86203 9.28199 9.01401 8.97081 9.32519L7.63924 10.6568C5.59123 9.61466 3.91229 7.94296 2.8702 5.8877L4.209 4.54888C4.52018 4.2377 4.67216 3.80349 4.6215 3.36205L4.41163 1.53836C4.32479 0.807445 3.70966 0.257446 2.97151 0.257446H1.71955C0.90179 0.257446 0.221532 0.937708 0.27219 1.75547C0.655739 7.93572 5.59847 12.8712 11.7714 13.2548C12.5892 13.3054 13.2695 12.6252 13.2695 11.8074V10.5555C13.2767 9.82453 12.7267 9.2094 11.9958 9.12256Z" />
+            </svg>
+          </div>
+          <div class="form-field">
+            <input name="email" type="email" id="email" class="form-item form-input" placeholder=" " />
+            <label for="email" class="form-label">Почта</label>
+            <svg class="form-icon" width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z" />
+            </svg>
+          </div>
+          <!-- <div class="form-field">
+            <label for="comment" class="form-label">
+              <span class="form-title">Комментарий</span>
+              <textarea name="" id="comment" rows="3" cols="35" name="text" class="form-textarea form-input"></textarea>
+            </label>
+          </div> -->
+          <label for="condition" class="check option">Соглашаюсь с рассылкой и принимаю <span class="check-link">Условия договора</span> 
+          <input name="" id="condition" name="condition" type="checkbox" value="confirm" class="check-input" />
+          <span class="check-box"></span>
           </label>
-          <label for="email" class="form-field">
-            <span class="form-label">Почта</span>
-            <input type="email" id="email" class="form-item form-input"/>
-          </label>
-          <label for="comment" class="form-field">
-            <span class="form-label">Комментарий</span>
-            <textarea id="comment" rows="3" cols="35" name="text" class="form-textarea form-input"></textarea>
-          </label>
-          <input id="condition" name="condition" type="checkbox" value="confirm" class="form-condition" />
-          <label for="condition" class="form-condition">Соглашаюсь с рассылкой и принимаю <span class="form-condition-link">Условия договора</span> 
-          </label>
+        
         </form>
         <button class="button modal-btn" data-close-modal>Отправить</button>
       </div>
